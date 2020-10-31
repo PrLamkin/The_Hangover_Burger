@@ -16,3 +16,12 @@ router.post("/insertOne", function(req, res) {
         res.redirect("/")
     });
 });
+
+router.post("/updateOne/:id", function(req, res) {
+    var condition = "id = " + req.params.id;
+    burger.updateOne({
+        devoured: req.body.devoured
+    }, condition, function() {
+        res.redirect("/");
+    });
+});
