@@ -16,11 +16,20 @@ var orm = {
         })
     },
     updateOne: function(colVal, id, callback) {
-        var queryString = "DELETE FROM burger WHERE " + id + ";";
+        var queryString = "UPDATE burgers SET devoured='1' WHERE " + id + ";";
+        connection.query(queryString, [id], function(err, result) {
+
+            if (err) throw err;
+
+            callback(result);
+        });
+    },
+    deleteOne: function(id, callback) {
+        var queryString = "DELETE FROM burgers WHERE " + id + ";";
         connection.query(queryString, [id], function(err, res) {
             if (err) throw err;
             callback(res);
-        })
+        });
     },
 }
 

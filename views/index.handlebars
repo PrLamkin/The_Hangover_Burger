@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <center><img src="/assets/images/patty.png"></center>
+            <center><img src="/assets/images/uwu-borgar.png"></center>
             <br>
             <br>
         </div>
@@ -27,5 +27,45 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-6 burger">
+            <h3 class="miniHeading">B O R G A R</h3>
+            <br>
+            <ul>
+                {{#each burger}}
+                {{#unless this.devoured}}
+                <div class="showBurger">
+                    <p>
+                        {{this.burger_name}}</p>
+                    <form action="/updateOne/{{this.id}}" method="POST">
+                        <input type="hidden" name="devoured" value="1">
+                        <button type="submit" class="btn" style="background-color: bisque ;">eat a borgar</button>
+                    </form>
+                    <br>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-6 devoured">
+            <h3 class="miniHeading">burgers devoured</h3>
+            <br>
+            <ul>
+                {{#each burger}}
+                {{#if this.devoured}}
+                <div class="devourBurger">
+                <p>
+                    {{this.burger_name}}</p>
+                <form action="/deleteOne/{{this.id}}" method="POST">
+                    <button type="submit" class="btn"
+                        style="background-color: bisque ;">delete Borgar</button>
+                </form>
+                {{/if}}
+                {{/each}}
+            </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
 </div>
 
