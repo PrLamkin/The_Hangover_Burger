@@ -7,6 +7,6 @@ create table burger(
 id int not null auto_increment,
 burger_name varchar(500) not null,
 devoured boolean not null default 0,
-createdAt timestamp not null,
+created_at varchar(40) default '' not null,
 primary key (id)
 );

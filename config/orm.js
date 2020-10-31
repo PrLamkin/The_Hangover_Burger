@@ -16,7 +16,7 @@ var orm = {
         })
     },
     updateOne: function(colVal, id, callback) {
-        var queryString = "UPDATE burgers SET devoured='1' WHERE " + id + ";";
+        var queryString = "UPDATE burger SET devoured='1' WHERE " + id + ";";
         connection.query(queryString, [id], function(err, result) {
 
             if (err) throw err;
@@ -25,7 +25,7 @@ var orm = {
         });
     },
     deleteOne: function(id, callback) {
-        var queryString = "DELETE FROM burgers WHERE " + id + ";";
+        var queryString = "DELETE FROM burger WHERE " + id + ";";
         connection.query(queryString, [id], function(err, res) {
             if (err) throw err;
             callback(res);
