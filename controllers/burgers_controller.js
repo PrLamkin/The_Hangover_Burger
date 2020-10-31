@@ -25,3 +25,12 @@ router.post("/updateOne/:id", function(req, res) {
         res.redirect("/");
     });
 });
+
+router.post("/deleteOne/:id", function(req, res) {
+    var condition = "id = " + req.params.id;
+    burger.deleteOne(condition, function() {
+        res.redirect("/");
+    });
+});
+
+module.exports = router;
