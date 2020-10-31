@@ -1,0 +1,31 @@
+{
+  "name": "the_hangover_burger",
+  "version": "1.0.0",
+  "description": "Borgar app",
+  "main": "index.js",
+  "scripts": {
+    "test": "err"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrLamkin/The_Hangover_Burger.git"
+  },
+  "keywords": [
+    "B",
+    "O",
+    "R",
+    "G",
+    "A",
+    "R"
+  ],
+  "author": "Definitely Peter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrLamkin/The_Hangover_Burger/issues"
+  },
+  "homepage": "https://github.com/PrLamkin/The_Hangover_Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
