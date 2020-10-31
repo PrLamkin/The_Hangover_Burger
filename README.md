@@ -10,13 +10,13 @@ Step 1. Load the Borgar
 <img src="Example/BORGER1.png">
 
 Step 2. Make a burger
-<img src="Example/BORGER@.png">
+<img src="Examples/BORGER@.png">
 
 Step 3. Eat a Borgar
-<img src="Example/BORGER#.png">
+<img src="Examples/BORGER#.png">
 
 Step 4. Yeet the Borgar
-<img src="Example/BORGER$.png>
+<img src="Examples/BORGER$.png>
 
 Step 5. Profit???????
 
